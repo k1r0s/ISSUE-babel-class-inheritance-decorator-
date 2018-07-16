@@ -11,4 +11,4 @@ class Bar extends Foo {
 
 const bar = new Bar
 
-console.log(bar.sayHello())
+console.log(bar.sayHello());
