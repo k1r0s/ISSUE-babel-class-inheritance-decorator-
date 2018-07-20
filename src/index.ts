@@ -1,14 +1,10 @@
 import { beforeInstance } from "kaop-ts"
 
-@beforeInstance(() => {})
-class Foo {}
-
-class Bar extends Foo {
-  sayHello() {
-    return "hi"
+@beforeInstance(() => console.log("before instance"))
+class Foo {
+  constructor() {
+    console.log("constructor invokation")
   }
 }
 
-const bar = new Bar
-
-console.log(bar.sayHello());
+new Foo
