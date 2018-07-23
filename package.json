@@ -5,7 +5,8 @@
   "scripts": {
     "run:indexjs": "babel-node src/index.js",
     "run:babel": "babel-node",
-    "run:indexts": "ts-node src/index.ts"
+    "run:indexts": "ts-node src/index.ts",
+    "run:ts": "ts-node"
   },
   "keywords": [],
   "author": "",
